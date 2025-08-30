@@ -28,3 +28,14 @@ The 8-NN distance profile indicates an elbow at higher distances, recommending *
 
 Using **ε = 1.171** (with `min_samples = 8`) yields well-separated clusters and filters outliers, consistent with the scene geometry.
 ![Dataset 2: DBSCAN clusters (ε=1.171, min_samples=8)](images/dataset2_dbscan_clusters.jpg)
+
+
+## Catenary Extraction via Largest-Span Cluster
+
+### Dataset 1 — Largest Cluster
+Following clustering, the **largest connected component** corresponds to the catenary system. Its axis-aligned bounding box in the original coordinate frame is **xmin = 27.232, ymin = 80.019, xmax = 49.111, ymax = 139.217**.  
+![Dataset 1: catenary cluster with bounding box](images/dataset1_catenary_cluster.jpg)
+
+### Dataset 2 — Largest Cluster
+Analogously, the **largest cluster** in Dataset 2 also maps to the catenary system, with bounding box **xmin = 11.393, ymin = 0.043, xmax = 32.804, ymax = 57.021**.  
+![Dataset 2: catenary cluster with bounding box](images/dataset2_catenary_cluster.jpg)
